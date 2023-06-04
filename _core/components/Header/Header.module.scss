@@ -1,0 +1,11 @@
+.header {
+  grid-area: header;
+  background-color: white;
+  padding: 20px;
+
+  border-radius: 8px;
+
+  -webkit-box-shadow: 0px 9px 29px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 29px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 29px -11px rgba(0, 0, 0, 0.75);
+}

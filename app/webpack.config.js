@@ -16,8 +16,13 @@ module.exports = {
     historyApiFallback: true,
   },
   resolve: {
-    modules: [__dirname, 'app', 'node_modules'],
-    extensions: ['*', '.js', '.jsx', '.tsx', '.ts', '...'],
+    modules: [__dirname, 'app', 'node_modules', '_core', '_ui', '_store'],
+    extensions: ['.*', '.js', '.jsx', '.tsx', '.ts', '.json', '.wasm', '...'],
+    alias: {
+      _core: path.resolve(__dirname, '../_core/'),
+      _ui: path.resolve(__dirname, '../_ui/'),
+      _store: path.resolve(__dirname, '../_store/'),
+    },
   },
   module: {
     rules: [

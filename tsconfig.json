@@ -1,5 +1,5 @@
 {
-  "include": ["core/**/*", "custom.d.ts", "app/**/*", "_ui/**/*"],
+  "include": ["_core/**/*", "custom.d.ts", "app/**/*", "_ui/**/*"],
   "exclude": ["./dist/", "node_modules", "i18n"],
   "compilerOptions": {
     "outDir": "./dist/",
@@ -11,6 +11,12 @@
     "moduleResolution": "node",
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "_core/*": ["./_core/*"],
+      "_ui/*": ["./_ui/*"],
+      "_store/*": ["./_store/*"]
+    }
   }
 }
